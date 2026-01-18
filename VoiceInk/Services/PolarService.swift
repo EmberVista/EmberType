@@ -3,8 +3,8 @@ import IOKit
 import os
 
 class PolarService {
-    private let organizationId = "b67c59b5-2143-4cfa-9d00-057b6b53b925"
-    private let apiToken = "polar_oat_c8d7RycatrPGOGNcRa0qwul3cNj4lih6Rs6xp3lzO7j"
+    private let organizationId = Secrets.polarOrganizationId
+    private let apiToken = Secrets.polarAPIToken
     private let baseURL = "https://api.polar.sh"
     private let logger = Logger(subsystem: "com.embervista.embertype", category: "PolarService")
     
