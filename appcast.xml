@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>VoiceInk</title>
+        <item>
+            <title>1.69</title>
+            <pubDate>Sun, 12 Jan 2026 12:00:00 +0545</pubDate>
+            <sparkle:version>169</sparkle:version>
+            <sparkle:shortVersionString>1.69</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+
+                <h3>What's New in Version 1.69</h3>
+                <ul>
+                    <li>Fix recording Issue</li>
+                    <li>Added export logs option in settings</li>
+                </ul>
+
+            ]]></description>
+            <enclosure url="https://github.com/Beingpax/VoiceInk/releases/download/v1.69/VoiceInk.dmg" length="10786047" type="application/octet-stream" sparkle:edSignature="tPVfTDY+CKBMxW5EW+KsbhsH5YiVDyY9VFplI71EiDu56GZu0fWxd/p/V2WRdPHX+8FKfVpmSJwhzVgCHL7FBg=="/>
+        </item>
+    </channel>
+</rss>
