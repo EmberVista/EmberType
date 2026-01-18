@@ -13,8 +13,8 @@
     <a href="https://www.youtube.com/@EmberTypeApp">YouTube</a>
   </p>
 
-  <a href="https://embertype.com/download/EmberType-1.0.0.dmg">
-    <img src="https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=apple" alt="Download EmberType" width="200"/>
+  <a href="https://embertype.com">
+    <img src="https://img.shields.io/badge/Get_EmberType-Website-blue?style=for-the-badge&logo=apple" alt="Get EmberType" width="200"/>
   </a>
 </div>
 
