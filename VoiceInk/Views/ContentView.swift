@@ -67,8 +67,8 @@ struct ContentView: View {
 
     private var visibleViewTypes: [ViewType] {
         ViewType.allCases.filter { viewType in
-            // Hide Power Mode and Enhancement for simplified EmberType experience
-            if viewType == .powerMode || viewType == .enhancement {
+            // Hide Power Mode for simplified EmberType experience
+            if viewType == .powerMode {
                 return false
             }
             return true
