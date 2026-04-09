@@ -104,11 +104,14 @@ struct ParakeetModelCardRowView: View {
     private var progressSection: some View {
         Group {
             if isDownloading {
-                let progress = whisperState.downloadProgress[model.name] ?? 0.0
-                ProgressView(value: progress)
-                    .progressViewStyle(LinearProgressViewStyle())
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.top, 8)
+                HStack(spacing: 8) {
+                    ProgressView()
+                        .controlSize(.small)
+                    Text("Downloading model...")
+                        .font(.system(size: 11))
+                        .foregroundColor(Color(.secondaryLabelColor))
+                }
+                .padding(.top, 8)
             }
         }
     }

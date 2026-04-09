@@ -35,33 +35,18 @@ extension WhisperState {
 
         let modelName = model.name
         parakeetDownloadStates[modelName] = true
-        downloadProgress[modelName] = 0.0
-
-        let timer = Timer.scheduledTimer(withTimeInterval: 1.2, repeats: true) { timer in
-            Task { @MainActor in
-                if let currentProgress = self.downloadProgress[modelName], currentProgress < 0.9 {
-                    self.downloadProgress[modelName] = currentProgress + 0.005
-                }
-            }
-        }
 
         let version = parakeetVersion(for: modelName)
 
         do {
             _ = try await AsrModels.downloadAndLoad(version: version)
-
             _ = try await VadManager()
-
             UserDefaults.standard.set(true, forKey: parakeetDefaultsKey(for: modelName))
-            downloadProgress[modelName] = 1.0
         } catch {
             UserDefaults.standard.set(false, forKey: parakeetDefaultsKey(for: modelName))
         }
 
-        timer.invalidate()
         parakeetDownloadStates[modelName] = false
-        downloadProgress[modelName] = nil
-
         refreshAllAvailableModels()
     }
 
