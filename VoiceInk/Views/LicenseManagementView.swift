@@ -194,7 +194,7 @@ struct LicenseManagementView: View {
 
                 HStack(spacing: 12) {
                     Button(action: {
-                        if let url = URL(string: "https://polar.sh/purchases") {
+                        if let url = URL(string: "https://polar.sh/embervista/portal") {
                             NSWorkspace.shared.open(url)
                         }
                     }) {
