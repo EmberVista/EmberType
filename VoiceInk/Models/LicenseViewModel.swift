@@ -57,6 +57,13 @@ class LicenseViewModel: ObservableObject {
         loadLicenseState()
     }
 
+    /// Re-evaluate license state against the trial start date.
+    /// Call this before gating behavior on `.trialExpired` so the in-memory state reflects real time,
+    /// not just the state captured at app launch.
+    func refreshLicenseState() {
+        loadLicenseState()
+    }
+
     private func loadLicenseState() {
         #if DEBUG
         // Debug: Use Xcode launch arguments to test license states

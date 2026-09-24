@@ -170,6 +170,18 @@ class WhisperState: NSObject, ObservableObject {
                 }
             }
         } else {
+            licenseViewModel.refreshLicenseState()
+            if case .trialExpired = licenseViewModel.licenseState {
+                await MainActor.run {
+                    NotificationManager.shared.showNotification(
+                        title: "Trial expired — upgrade to EmberType Pro",
+                        type: .warning
+                    )
+                    licenseViewModel.openPurchaseLink()
+                }
+                return
+            }
+
             guard currentTranscriptionModel != nil else {
                 await MainActor.run {
                     NotificationManager.shared.showNotification(
@@ -384,14 +396,7 @@ class WhisperState: NSObject, ObservableObject {
 
         if await checkCancellationAndCleanup() { return }
 
-        if var textToPaste = finalPastedText, transcription.transcriptionStatus == TranscriptionStatus.completed.rawValue {
-            if case .trialExpired = licenseViewModel.licenseState {
-                textToPaste = """
-                    Your trial has expired. Upgrade to EmberType Pro at embertype.com
-                    \n\(textToPaste)
-                    """
-            }
-
+        if let textToPaste = finalPastedText, transcription.transcriptionStatus == TranscriptionStatus.completed.rawValue {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
                 CursorPaster.pasteAtCursor(textToPaste + " ")
 
