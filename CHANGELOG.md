@@ -2,7 +2,12 @@
 
 All notable changes to EmberType will be documented in this file.
 
-## [1.1] - Unreleased
+## [1.1.1] - 2026-09-29
+
+### Changed
+- Reliability and security improvements, including more dependable license activation and clearer messages when activation goes wrong.
+
+## [1.1] - 2026-09-28
 
 ### Added
 - **Spoken punctuation.** EmberType can now type only the punctuation you say, and add none of its own.
