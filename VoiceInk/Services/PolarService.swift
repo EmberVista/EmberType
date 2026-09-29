@@ -68,6 +68,7 @@ class PolarService {
                 let errorMsg = String(data: data, encoding: .utf8) ?? "Unknown error"
                 logger.notice("🔑 License validation failed [HTTP \(httpResponse.statusCode)]: \(errorMsg, privacy: .public)")
                 if httpResponse.statusCode == 404 { throw LicenseError.notFound }
+                if httpResponse.statusCode == 429 { throw LicenseError.rateLimited }
                 throw LicenseError.validationFailed(errorMsg)
             }
         }
@@ -111,6 +112,7 @@ class PolarService {
                 
                 // Check for specific error messages
                 if httpResponse.statusCode == 404 { throw LicenseError.notFound }
+                if httpResponse.statusCode == 429 { throw LicenseError.rateLimited }
                 if errorMsg.contains("License key does not require activation") {
                     throw LicenseError.activationNotRequired
                 }
@@ -150,6 +152,7 @@ class PolarService {
                 let errorMsg = String(data: data, encoding: .utf8) ?? "Unknown error"
                 logger.notice("🔑 License validation with activation failed [HTTP \(httpResponse.statusCode)]: \(errorMsg, privacy: .public)")
                 if httpResponse.statusCode == 404 { throw LicenseError.notFound }
+                if httpResponse.statusCode == 429 { throw LicenseError.rateLimited }
                 throw LicenseError.validationFailed(errorMsg)
             }
         }
@@ -171,9 +174,12 @@ enum LicenseError: Error, LocalizedError {
     case activationLimitReached(String)
     case activationNotRequired
     case notFound
+    case rateLimited
     
     var errorDescription: String? {
         switch self {
+        case .rateLimited:
+            return "Too many attempts. Please wait a minute and try again."
         case .notFound:
             return "That license key wasn't found. Copy it exactly as shown in your Polar receipt, dashes included."
         case .activationFailed(let details):
