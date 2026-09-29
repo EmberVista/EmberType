@@ -119,6 +119,7 @@ struct EmberTypeApp: App {
         Task {
             await whisperState.resetOnLaunch()
             await licenseViewModel.revalidateIfDue()
+            await MinimumVersion.refreshIfDue()
         }
 
         AppShortcuts.updateAppShortcutParameters()
@@ -320,6 +321,7 @@ class UpdaterViewModel: ObservableObject {
     private let updaterController: SPUStandardUpdaterController
     
     @Published var canCheckForUpdates = false
+    private var updateRequiredObserver: NSObjectProtocol?
     
     init() {
         updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
@@ -330,6 +332,12 @@ class UpdaterViewModel: ObservableObject {
         
         updaterController.updater.publisher(for: \.canCheckForUpdates)
             .assign(to: &$canCheckForUpdates)
+
+        // A remotely required update (MinimumVersion) opens the update window
+        updateRequiredObserver = NotificationCenter.default.addObserver(forName: .updateRequired, object: nil, queue: .main) { [weak self] _ in
+            guard let self, self.canCheckForUpdates else { return }
+            self.checkForUpdates()
+        }
     }
     
     func toggleAutoUpdates(_ value: Bool) {

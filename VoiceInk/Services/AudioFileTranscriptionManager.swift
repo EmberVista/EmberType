@@ -192,9 +192,12 @@ enum TranscriptionError: Error, LocalizedError {
     case noModelSelected
     case transcriptionCancelled
     case trialExpired
+    case updateRequired
     
     var errorDescription: String? {
         switch self {
+        case .updateRequired:
+            return "This version of EmberType needs updating. Choose Check for Updates in the EmberType menu."
         case .trialExpired:
             return "Your EmberType trial has ended. Upgrade to EmberType Pro to keep transcribing."
         case .noModelSelected:

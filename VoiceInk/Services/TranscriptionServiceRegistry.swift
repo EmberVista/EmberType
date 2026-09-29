@@ -54,6 +54,10 @@ class TranscriptionServiceRegistry {
     /// Every transcription path (dictation, Transcribe Audio, re-transcribe, system audio)
     /// comes through here, so the trial ends for all of them at once.
     private func requireActiveLicense() throws {
+        if MinimumVersion.isUpdateRequired {
+            NotificationCenter.default.post(name: .updateRequired, object: nil)
+            throw TranscriptionError.updateRequired
+        }
         whisperState.licenseViewModel.refreshLicenseState()
         if case .trialExpired = whisperState.licenseViewModel.licenseState {
             throw TranscriptionError.trialExpired

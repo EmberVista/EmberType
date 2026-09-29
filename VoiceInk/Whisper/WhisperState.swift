@@ -176,7 +176,20 @@ class WhisperState: NSObject, ObservableObject {
         } else {
             licenseViewModel.refreshLicenseState()
             let licenseToCheck = licenseViewModel
-            Task { await licenseToCheck.revalidateIfDue() }
+            Task {
+                await licenseToCheck.revalidateIfDue()
+                await MinimumVersion.refreshIfDue()
+            }
+            if MinimumVersion.isUpdateRequired {
+                await MainActor.run {
+                    NotificationManager.shared.showNotification(
+                        title: "Update required — install the latest EmberType",
+                        type: .warning
+                    )
+                    NotificationCenter.default.post(name: .updateRequired, object: nil)
+                }
+                return
+            }
             if case .trialExpired = licenseViewModel.licenseState {
                 await MainActor.run {
                     NotificationManager.shared.showNotification(
