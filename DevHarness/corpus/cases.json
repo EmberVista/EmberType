@@ -1,0 +1,149 @@
+[
+ {
+  "id": "insert-short",
+  "say": "short",
+  "pos": "mid",
+  "expect": "short"
+ },
+ {
+  "id": "insert-phrase",
+  "say": "all of my",
+  "pos": "mid",
+  "expect": "all of my"
+ },
+ {
+  "id": "insert-name",
+  "say": "and Sarah from accounting",
+  "pos": "mid",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ]
+ },
+ {
+  "id": "name-first",
+  "say": "Sarah called about the invoice",
+  "pos": "mid",
+  "expect": "Sarah called about the invoice"
+ },
+ {
+  "id": "comma-question",
+  "say": "hello comma how are you question mark",
+  "pos": "start",
+  "expect": "Hello, how are you?"
+ },
+ {
+  "id": "no-spoken-punct-question",
+  "say": "is this working",
+  "pos": "mid",
+  "expect": "is this working"
+ },
+ {
+  "id": "no-spoken-punct-sentences",
+  "say": "I went to the store and then I came home it was a long day",
+  "pos": "start",
+  "expect": "I went to the store and then I came home it was a long day"
+ },
+ {
+  "id": "semicolon",
+  "say": "the first part is done semicolon the second is not",
+  "pos": "start",
+  "expect": "The first part is done; the second is not"
+ },
+ {
+  "id": "colon",
+  "say": "here is the list colon apples and pears",
+  "pos": "start",
+  "expect": "Here is the list: apples and pears"
+ },
+ {
+  "id": "parens",
+  "say": "the budget open paren see attached close paren is final period",
+  "pos": "start",
+  "expect": "The budget (see attached) is final."
+ },
+ {
+  "id": "parenthesis",
+  "say": "the budget open parenthesis see attached close parenthesis is final period",
+  "pos": "start",
+  "expect": "The budget (see attached) is final."
+ },
+ {
+  "id": "quotes",
+  "say": "she said open quote hello close quote and left period",
+  "pos": "start",
+  "expect": "She said \"hello\" and left."
+ },
+ {
+  "id": "newlines",
+  "say": "first line new line second line new paragraph third paragraph",
+  "pos": "start",
+  "expect": "First line\nSecond line\n\nThird paragraph"
+ },
+ {
+  "id": "two-sentences",
+  "say": "the meeting is at three period we will discuss the budget comma the timeline comma and staffing period",
+  "pos": "start",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing."
+ },
+ {
+  "id": "exclaim",
+  "say": "please send the report by Friday exclamation point",
+  "pos": "start",
+  "expect": "Please send the report by Friday!"
+ },
+ {
+  "id": "i-pronoun",
+  "say": "then I realized I was wrong period",
+  "pos": "mid",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ]
+ },
+ {
+  "id": "literal-period",
+  "say": "the trial literal period lasts seven days period",
+  "pos": "start",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ]
+ },
+ {
+  "id": "full-stop",
+  "say": "that is all full stop",
+  "pos": "start",
+  "expect": "That is all."
+ },
+ {
+  "id": "apostrophe",
+  "say": "don't worry it's fine",
+  "pos": "mid",
+  "expect": "don't worry it's fine"
+ },
+ {
+  "id": "numbers",
+  "say": "we sold 1,200 units at 3.5 percent margin",
+  "pos": "start",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ]
+ },
+ {
+  "id": "greater-than-sign",
+  "say": "press the shortcut or choose edit greater than sign start dictation period",
+  "pos": "start",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ]
+ },
+ {
+  "id": "greater-than-words",
+  "say": "it costs greater than expected",
+  "pos": "mid",
+  "expect": "it costs greater than expected"
+ }
+]

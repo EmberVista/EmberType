@@ -1,0 +1,5 @@
+.build/
+.devhome/
+corpus/audio/
+corpus/results/latest.json
+*.profraw

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1.1-spoken-punctuation",
+    "title": "New: say your own punctuation",
+    "description": "EmberType 1.1 can type only the punctuation you say: \"comma\", \"period\", \"new paragraph\". Update via Check for Updates in the menu bar, then turn it on in AI Models → gear icon.",
+    "url": "https://embertype.com/docs/spoken-punctuation/",
+    "startAt": "2026-10-01T00:00:00Z",
+    "endAt": "2026-11-15T00:00:00Z"
+  }
+]

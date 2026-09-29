@@ -1,0 +1,2342 @@
+[
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "colon",
+  "ok": false,
+  "got": "Here is a list calling apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is a list calling apples and pears.",
+  "restored": "Here is a list calling apples and pears."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "colon",
+  "ok": false,
+  "got": "Here is the list: apples and peers",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and peers.",
+  "restored": "Here is the list colon apples and peers."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello comma how are you question mark.",
+  "restored": "Hello comma how are you question mark."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "comma-question",
+  "ok": false,
+  "got": "Hello Kama how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello Kama how are you question mark?",
+  "restored": "Hello Kama how are you question mark?"
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello comma how are you question mark?",
+  "restored": "Hello comma how are you question mark?"
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello comma how are you question mark",
+  "restored": "Hello comma how are you question mark"
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello comma how are you question mark.",
+  "restored": "Hello comma how are you question mark."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "exclaim",
+  "ok": false,
+  "got": "Please send a report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send a report by Friday exclamation point.",
+  "restored": "Please send a report by Friday exclamation point."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "full-stop",
+  "ok": false,
+  "got": "That is awful stop",
+  "expect": "That is all.",
+  "raw": "That is awful stop.",
+  "restored": "That is awful stop."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose edit > start dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose edit greater than sign start dictation period.",
+  "restored": "Press the shortcut or choose edit greater than sign start dictation period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "greater-than-sign",
+  "ok": false,
+  "got": "Press the shortcut or two led a > star dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or two led a greater than sign star dictation period.",
+  "restored": "Press the shortcut or two led a greater than sign star dictation period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose Edit > Start Dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period.",
+  "restored": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose Edit > Start Dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period.",
+  "restored": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose Edit > Start Dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period.",
+  "restored": "Press the shortcut or choose Edit Greater Than Sign Start Dictation Period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realised I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realised I was wrong period.",
+  "restored": "Then I realised I was wrong period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realised I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realised I was wrong period.",
+  "restored": "Then I realised I was wrong period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from accounting.",
+  "restored": "And Sarah from accounting."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "insert-name",
+  "ok": false,
+  "got": "and Sarah from a county",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from a county.",
+  "restored": "And Sarah from a county."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from accounting.",
+  "restored": "And Sarah from accounting."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from accounting.",
+  "restored": "And Sarah from accounting."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from accounting.",
+  "restored": "And Sarah from accounting."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "insert-phrase",
+  "ok": false,
+  "got": "all am I",
+  "expect": "all of my",
+  "raw": "All am I.",
+  "restored": "All am I."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short",
+  "restored": "Short"
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "insert-short",
+  "ok": false,
+  "got": "\u0161est",
+  "expect": "short",
+  "raw": "\u0161est",
+  "restored": "\u0161est"
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "literal-period",
+  "ok": false,
+  "got": "The triliteral. Lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The triliteral period lasts seven days period.",
+  "restored": "The triliteral period lasts seven days period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts 7 days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts 7 days period.",
+  "restored": "The trial literal period lasts 7 days period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph",
+  "restored": "First line new line second line new paragraph third paragraph"
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph",
+  "restored": "First line new line second line new paragraph third paragraph"
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph",
+  "restored": "First line new line second line new paragraph third paragraph"
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph",
+  "restored": "First line new line second line new paragraph third paragraph"
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph",
+  "restored": "First line new line second line new paragraph third paragraph"
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "no-spoken-punct-question",
+  "ok": false,
+  "got": "is this worth chief",
+  "expect": "is this working",
+  "raw": "Is this worth chief?",
+  "restored": "Is this worth chief?"
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "numbers",
+  "ok": false,
+  "got": "We sold one thousand two hundred units at three point five percent margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold one thousand two hundred units at three point five percent margin.",
+  "restored": "We sold one thousand two hundred units at three point five percent margin."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parent see attached close parent is final period.",
+  "restored": "The budget open parent see attached close parent is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "parens",
+  "ok": false,
+  "got": "The budget (attached) final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parentheses attached close parentheses final period.",
+  "restored": "The budget open parentheses attached close parentheses final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parent see attached close parent is final period.",
+  "restored": "The budget open parent see attached close parent is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parent see attached close paren is final period.",
+  "restored": "The budget open parent see attached close paren is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "parens",
+  "ok": false,
+  "got": "The budget open parenthes attached close parenis final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthes attached close parenis final period.",
+  "restored": "The budget open parenthes attached close parenis final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon, the second is not.",
+  "restored": "The first part is done semicolon, the second is not."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "semicolon",
+  "ok": false,
+  "got": "The first part has done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part has done semicolon, the second is not.",
+  "restored": "The first part has done semicolon, the second is not."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon, the second is not.",
+  "restored": "The first part is done semicolon, the second is not."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v3",
+  "voice": "Daniel",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period we will discuss the budget, the timeline, comma, and staffing period.",
+  "restored": "The meeting is at 3 period we will discuss the budget comma the timeline, comma, and staffing period."
+ },
+ {
+  "model": "v3",
+  "voice": "Fred",
+  "case": "two-sentences",
+  "ok": false,
+  "got": "The meeting is at re. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at re period we will discuss the budget comma, the timeline comma and staffing period.",
+  "restored": "The meeting is at re period we will discuss the budget comma, the timeline comma and staffing period."
+ },
+ {
+  "model": "v3",
+  "voice": "Karen",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period we will discuss the budget, the timeline, comma, and staffing period.",
+  "restored": "The meeting is at 3 period we will discuss the budget comma the timeline, comma, and staffing period."
+ },
+ {
+  "model": "v3",
+  "voice": "Moira",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period we will discuss the budget, the timeline comma and staffing period.",
+  "restored": "The meeting is at 3 period we will discuss the budget comma the timeline comma and staffing period."
+ },
+ {
+  "model": "v3",
+  "voice": "Samantha",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period we will discuss the budget, the timeline, comma, and staffing period.",
+  "restored": "The meeting is at 3 period we will discuss the budget comma the timeline, comma, and staffing period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry, it's fine.",
+  "restored": "Don't worry, it's fine."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry it's fine.",
+  "restored": "Don't worry it's fine."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "apostrophe",
+  "ok": true,
+  "got": "don't worry it's fine",
+  "expect": "don't worry it's fine",
+  "raw": "Don't worry, it's fine.",
+  "restored": "Don't worry, it's fine."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "colon",
+  "ok": false,
+  "got": "Here is the list calling apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list calling apples and pears.",
+  "restored": "Here is the list calling apples and pears."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "colon",
+  "ok": false,
+  "got": "Here is the list Colin Apples and Peers",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list Colin Apples and Peers.",
+  "restored": "Here is the list Colin Apples and Peers."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "colon",
+  "ok": true,
+  "got": "Here is the list: apples and pears",
+  "expect": "Here is the list: apples and pears",
+  "raw": "Here is the list colon apples and pears.",
+  "restored": "Here is the list colon apples and pears."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello, comma, how are you? question Mark.",
+  "restored": "Hello, comma, how are you? question Mark."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "comma-question",
+  "ok": false,
+  "got": "Hello come how are your?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello, come, how are your question mark?",
+  "restored": "Hello, come, how are your question mark?"
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "comma-question",
+  "ok": true,
+  "got": "Hello, how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello, Comma. How are you question mark?",
+  "restored": "Hello, Comma. How are you question mark?"
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "comma-question",
+  "ok": false,
+  "got": "Hello Kama how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello, Kama, how are you? Question mark.",
+  "restored": "Hello, Kama, how are you? Question mark."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "comma-question",
+  "ok": false,
+  "got": "Hello Kama how are you?",
+  "expect": "Hello, how are you?",
+  "raw": "Hello, Kama, how are you? Question mark.",
+  "restored": "Hello, Kama, how are you? Question mark."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "exclaim",
+  "ok": false,
+  "got": "Please send a report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send a report by Friday exclamation point.",
+  "restored": "Please send a report by Friday exclamation point."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "exclaim",
+  "ok": true,
+  "got": "Please send the report by Friday!",
+  "expect": "Please send the report by Friday!",
+  "raw": "Please send the report by Friday exclamation point.",
+  "restored": "Please send the report by Friday exclamation point."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "full-stop",
+  "ok": true,
+  "got": "That is all.",
+  "expect": "That is all.",
+  "raw": "That is all full stop.",
+  "restored": "That is all full stop."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose edit > start dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose edit greater than sign start dictation period.",
+  "restored": "Press the shortcut or choose edit greater than sign start dictation period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "greater-than-sign",
+  "ok": false,
+  "got": "Press the shortcut towards two led > star dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut towards two led greater than sign star dictation period.",
+  "restored": "Press the shortcut towards two led greater than sign star dictation period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose edit > start dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose edit greater than sign start dictation period.",
+  "restored": "Press the shortcut or choose edit greater than sign start dictation period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "greater-than-sign",
+  "ok": true,
+  "got": "Press the shortcut or choose edit > start dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose edit greater than sign start dictation period.",
+  "restored": "Press the shortcut or choose edit greater than sign start dictation period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "greater-than-sign",
+  "ok": false,
+  "got": "Press the shortcut or choose edit greater than signed start dictation.",
+  "expect": [
+   "Press the shortcut or choose Edit > Start Dictation.",
+   "Press the shortcut or choose edit > start dictation."
+  ],
+  "raw": "Press the shortcut or choose edit greater than signed start dictation period.",
+  "restored": "Press the shortcut or choose edit greater than signed start dictation period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "greater-than-words",
+  "ok": true,
+  "got": "it costs greater than expected",
+  "expect": "it costs greater than expected",
+  "raw": "It costs greater than expected.",
+  "restored": "It costs greater than expected."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong, period.",
+  "restored": "Then I realized I was wrong, period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "i-pronoun",
+  "ok": true,
+  "got": "then I realized I was wrong.",
+  "expect": [
+   "then I realized I was wrong.",
+   "then I realised I was wrong."
+  ],
+  "raw": "Then I realized I was wrong period.",
+  "restored": "Then I realized I was wrong period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from Accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from Accounting.",
+  "restored": "And Sarah from Accounting."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "insert-name",
+  "ok": false,
+  "got": "and Sarah from the county",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from the county.",
+  "restored": "And Sarah from the county."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from Accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from Accounting.",
+  "restored": "And Sarah from Accounting."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from Accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from Accounting.",
+  "restored": "And Sarah from Accounting."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "insert-name",
+  "ok": true,
+  "got": "and Sarah from accounting",
+  "expect": [
+   "and Sarah from accounting",
+   "and Sarah from Accounting"
+  ],
+  "raw": "And Sarah from accounting.",
+  "restored": "And Sarah from accounting."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "insert-phrase",
+  "ok": false,
+  "got": "all am I",
+  "expect": "all of my",
+  "raw": "All am I.",
+  "restored": "All am I."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "insert-phrase",
+  "ok": false,
+  "got": "olive My",
+  "expect": "all of my",
+  "raw": "Olive My",
+  "restored": "Olive My"
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "insert-phrase",
+  "ok": true,
+  "got": "all of my",
+  "expect": "all of my",
+  "raw": "All of my",
+  "restored": "All of my"
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "insert-short",
+  "ok": false,
+  "got": "sure",
+  "expect": "short",
+  "raw": "Sure.",
+  "restored": "Sure."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "insert-short",
+  "ok": false,
+  "got": "shot",
+  "expect": "short",
+  "raw": "Shot",
+  "restored": "Shot"
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "insert-short",
+  "ok": true,
+  "got": "short",
+  "expect": "short",
+  "raw": "Short.",
+  "restored": "Short."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "literal-period",
+  "ok": false,
+  "got": "The trialateral. Lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trialateral period lasts seven days period.",
+  "restored": "The trialateral period lasts seven days period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts seven days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts seven days period.",
+  "restored": "The trial literal period lasts seven days period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "literal-period",
+  "ok": true,
+  "got": "The trial period lasts 7 days.",
+  "expect": [
+   "The trial period lasts seven days.",
+   "The trial period lasts 7 days."
+  ],
+  "raw": "The trial literal period lasts 7 days period.",
+  "restored": "The trial literal period lasts 7 days period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "name-first",
+  "ok": true,
+  "got": "Sarah called about the invoice",
+  "expect": "Sarah called about the invoice",
+  "raw": "Sarah called about the invoice.",
+  "restored": "Sarah called about the invoice."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line, new line, second line, new paragraph, third paragraph.",
+  "restored": "First line, new line, second line, new paragraph, third paragraph."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line, new line, second line, new paragraph, third paragraph.",
+  "restored": "First line, new line, second line, new paragraph, third paragraph."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line, new line, second line, new paragraph, third paragraph.",
+  "restored": "First line, new line, second line, new paragraph, third paragraph."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line, new line, second line, new paragraph, third paragraph.",
+  "restored": "First line, new line, second line, new paragraph, third paragraph."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "newlines",
+  "ok": true,
+  "got": "First line\nSecond line\n\nThird paragraph",
+  "expect": "First line\nSecond line\n\nThird paragraph",
+  "raw": "First line new line second line new paragraph third paragraph.",
+  "restored": "First line new line second line new paragraph third paragraph."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "no-spoken-punct-question",
+  "ok": false,
+  "got": "is this word chief",
+  "expect": "is this working",
+  "raw": "Is this word chief?",
+  "restored": "Is this word chief?"
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "no-spoken-punct-question",
+  "ok": true,
+  "got": "is this working",
+  "expect": "is this working",
+  "raw": "Is this working?",
+  "restored": "Is this working?"
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "no-spoken-punct-sentences",
+  "ok": true,
+  "got": "I went to the store and then I came home it was a long day",
+  "expect": "I went to the store and then I came home it was a long day",
+  "raw": "I went to the store and then I came home it was a long day.",
+  "restored": "I went to the store and then I came home it was a long day."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "numbers",
+  "ok": false,
+  "got": "We sold one thousand two hundred units at three point five percent margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold one thousand two hundred units at three point five percent margin.",
+  "restored": "We sold one thousand two hundred units at three point five percent margin."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "numbers",
+  "ok": true,
+  "got": "We sold 1,200 units at 3.5% margin",
+  "expect": [
+   "We sold 1,200 units at 3.5% margin",
+   "We sold 1200 units at 3.5% margin"
+  ],
+  "raw": "We sold 1,200 units at 3.5% margin.",
+  "restored": "We sold 1,200 units at 3.5% margin."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "parens",
+  "ok": false,
+  "got": "The budget (C attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open paren C attached close paren is final period.",
+  "restored": "The budget open paren C attached close paren is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "parens",
+  "ok": false,
+  "got": "The budget (attached) final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis attached closed parenthesis final period.",
+  "restored": "The budget open parenthesis attached closed parenthesis final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open paren see attached close paren is final period.",
+  "restored": "The budget open paren see attached close paren is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open paren see attached close paren is final period.",
+  "restored": "The budget open paren see attached close paren is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "parens",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open paren see attached close paren is final period.",
+  "restored": "The budget open paren see attached close paren is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "parenthesis",
+  "ok": false,
+  "got": "The budget (C attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis C attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis C attached close parenthesis is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "parenthesis",
+  "ok": false,
+  "got": "The budget (see attached) is vinyl.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached closed parenthesis is vinyl period.",
+  "restored": "The budget open parenthesis see attached closed parenthesis is vinyl period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "parenthesis",
+  "ok": true,
+  "got": "The budget (see attached) is final.",
+  "expect": "The budget (see attached) is final.",
+  "raw": "The budget open parenthesis see attached close parenthesis is final period.",
+  "restored": "The budget open parenthesis see attached close parenthesis is final period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "quotes",
+  "ok": false,
+  "got": "She said \"her low\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote her low close quote and left period.",
+  "restored": "She said open quote her low close quote and left period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "quotes",
+  "ok": true,
+  "got": "She said \"hello\" and left.",
+  "expect": "She said \"hello\" and left.",
+  "raw": "She said open quote hello close quote and left period.",
+  "restored": "She said open quote hello close quote and left period."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon, the second is not.",
+  "restored": "The first part is done semicolon, the second is not."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "semicolon",
+  "ok": true,
+  "got": "The first part is done; the second is not",
+  "expect": "The first part is done; the second is not",
+  "raw": "The first part is done semicolon the second is not.",
+  "restored": "The first part is done semicolon the second is not."
+ },
+ {
+  "model": "v2",
+  "voice": "Daniel",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period. We will discuss the budget, the timeline, and staffing period.",
+  "restored": "The meeting is at 3 period. We will discuss the budget comma the timeline comma and staffing period."
+ },
+ {
+  "model": "v2",
+  "voice": "Fred",
+  "case": "two-sentences",
+  "ok": false,
+  "got": "The meeting is a three. We will discuss the budget come the timeline come and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is a three period, we will discuss the budget come, the timeline come and staffing period.",
+  "restored": "The meeting is a three period, we will discuss the budget come, the timeline come and staffing period."
+ },
+ {
+  "model": "v2",
+  "voice": "Karen",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period. We will discuss the budget, the timeline, and staffing period.",
+  "restored": "The meeting is at 3 period. We will discuss the budget comma the timeline comma and staffing period."
+ },
+ {
+  "model": "v2",
+  "voice": "Moira",
+  "case": "two-sentences",
+  "ok": true,
+  "got": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is at 3 period. We will discuss the budget comma, the timeline, and staffing period.",
+  "restored": "The meeting is at 3 period. We will discuss the budget comma, the timeline comma and staffing period."
+ },
+ {
+  "model": "v2",
+  "voice": "Samantha",
+  "case": "two-sentences",
+  "ok": false,
+  "got": "The meeting is a three. We will discuss the budget, the timeline, and staffing.",
+  "expect": "The meeting is at 3. We will discuss the budget, the timeline, and staffing.",
+  "raw": "The meeting is a three-period. We will discuss the budget, the timeline, and staffing period.",
+  "restored": "The meeting is a three-period. We will discuss the budget comma the timeline comma and staffing period."
+ }
+]
