@@ -2,6 +2,11 @@
 
 All notable changes to EmberType will be documented in this file.
 
+## [1.1.2] - 2026-10-02
+
+### Changed
+- Bug fixes and improvements.
+
 ## [1.1.1] - 2026-09-29
 
 ### Changed
