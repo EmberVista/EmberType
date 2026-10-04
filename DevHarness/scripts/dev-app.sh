@@ -2,7 +2,8 @@
 # Build and run an isolated dev copy of EmberType for automated testing.
 #
 #   scripts/dev-app.sh build   Debug build, bundle id com.embervista.EmberType.dev, ad hoc signed
-#   scripts/dev-app.sh start   launch it in a sandbox home (see below), with the debug dictation hook
+#   scripts/dev-app.sh start [ARGS]   launch it in a sandbox home (see below), with the debug dictation hook;
+#                              ARGS replace -forceLicensed (e.g. -forceTrialDays 2)
 #   scripts/dev-app.sh stop
 #   scripts/dev-app.sh set KEY TYPE VALUE   write a setting in the dev profile (defaults syntax, e.g. -bool true)
 #   scripts/dev-app.sh reset   wipe the dev profile
@@ -43,6 +44,8 @@ build)
     codesign --verify --deep --strict "$APP" && echo "signed: $APP"
     ;;
 start)
+    shift
+    license_args=("$@"); [ $# -eq 0 ] && license_args=(-forceLicensed)
     "$0" stop >/dev/null 2>&1 || true
     mkdir -p "$DEVHOME/Library/Application Support"
     ln -sfn "$HOME/Library/Application Support/FluidAudio" "$DEVHOME/Library/Application Support/FluidAudio"
@@ -60,7 +63,7 @@ start)
     prefs write "$BUNDLE_ID" "ParakeetModelDownloaded_parakeet-tdt-0.6b-v3" -bool true
     prefs read "$BUNDLE_ID" CurrentTranscriptionModel >/dev/null 2>&1 || \
         prefs write "$BUNDLE_ID" CurrentTranscriptionModel "parakeet-tdt-0.6b-v3"
-    CFFIXED_USER_HOME="$DEVHOME" nohup "$APP/Contents/MacOS/EmberType" -forceLicensed -debugDictationHook \
+    CFFIXED_USER_HOME="$DEVHOME" nohup "$APP/Contents/MacOS/EmberType" "${license_args[@]}" -debugDictationHook \
         >"$HERE/.build/dev-app.log" 2>&1 &
     echo "started pid $! (log: $HERE/.build/dev-app.log)"
     ;;
@@ -77,5 +80,5 @@ reset)
     echo "dev profile removed"
     ;;
 *)
-    sed -n '2,15p' "$0"; exit 2 ;;
+    sed -n '2,16p' "$0"; exit 2 ;;
 esac

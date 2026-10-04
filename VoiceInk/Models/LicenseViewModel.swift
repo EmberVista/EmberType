@@ -52,14 +52,18 @@ class LicenseViewModel: ObservableObject {
         #if DEBUG
         // Debug: Use Xcode launch arguments to test license states
         // In Xcode: Product > Scheme > Edit Scheme > Run > Arguments
-        // Add one of: -forceLicensed, -forceTrial, -forceExpired
-        if CommandLine.arguments.contains("-forceLicensed") {
+        // Add one of: -forceLicensed, -forceTrial, -forceExpired, -forceTrialDays N
+        let args = CommandLine.arguments
+        if let i = args.firstIndex(of: "-forceTrialDays"), i + 1 < args.count, let days = Int(args[i + 1]) {
+            licenseState = days > 0 ? .trial(daysRemaining: days) : .trialExpired
+            return
+        } else if args.contains("-forceLicensed") {
             licenseState = .licensed
             return
-        } else if CommandLine.arguments.contains("-forceTrial") {
+        } else if args.contains("-forceTrial") {
             licenseState = .trial(daysRemaining: 7)
             return
-        } else if CommandLine.arguments.contains("-forceExpired") {
+        } else if args.contains("-forceExpired") {
             licenseState = .trialExpired
             return
         }
@@ -109,10 +113,27 @@ class LicenseViewModel: ObservableObject {
         }
     }
     
-    func openPurchaseLink() {
-        if let url = URL(string: "https://buy.polar.sh/polar_cl_d8zIzbrwr8yG93D3zyFfwtTuXnq901xsA3Fgo0oT3xg") {
-            NSWorkspace.shared.open(url)
-        }
+    func openPurchaseLink(source: PurchaseLink.Source) {
+        NSWorkspace.shared.open(PurchaseLink.url(source: source))
+    }
+
+    /// Days left while in trial; nil when licensed or expired.
+    var trialDaysRemaining: Int? {
+        if case .trial(let daysRemaining) = licenseState { return daysRemaining }
+        return nil
+    }
+
+    /// True at most once a day in the last days of the trial. Marks the reminder as shown.
+    func takeTrialReminderIfDue() -> Bool {
+        refreshLicenseState()
+        let now = Date()
+        guard TrialReminderRules.shouldShow(
+            trialDaysRemaining: trialDaysRemaining,
+            lastShown: userDefaults.object(forKey: TrialReminderRules.lastShownKey) as? Date,
+            now: now
+        ) else { return false }
+        userDefaults.set(now, forKey: TrialReminderRules.lastShownKey)
+        return true
     }
     
     func validateLicense() async {

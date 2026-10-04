@@ -37,9 +37,7 @@ struct TrialMessageView: View {
                 .buttonStyle(.bordered)
 
                 Button(action: {
-                    if let url = URL(string: "https://buy.polar.sh/polar_cl_d8zIzbrwr8yG93D3zyFfwtTuXnq901xsA3Fgo0oT3xg") {
-                        NSWorkspace.shared.open(url)
-                    }
+                    NSWorkspace.shared.open(PurchaseLink.url(source: type == .expired ? .dashboardExpired : .dashboardTrial))
                 }) {
                     Text("Buy License")
                         .font(.system(size: 13, weight: .medium))

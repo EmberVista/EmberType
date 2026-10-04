@@ -196,7 +196,7 @@ class WhisperState: NSObject, ObservableObject {
                         title: "Trial expired — upgrade to EmberType Pro",
                         type: .warning
                     )
-                    licenseViewModel.openPurchaseLink()
+                    licenseViewModel.openPurchaseLink(source: .trialExpired)
                 }
                 return
             }

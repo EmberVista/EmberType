@@ -64,6 +64,7 @@ struct ContentView: View {
     @State private var selectedView: ViewType? = .metrics
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
     @EnvironmentObject private var licenseViewModel: LicenseViewModel
+    @State private var trialReminderDays: Int?
 
     private var visibleViewTypes: [ViewType] {
         ViewType.allCases.filter { viewType in
@@ -138,6 +139,23 @@ struct ContentView: View {
         .navigationSplitViewStyle(.balanced)
         .frame(width: 950)
         .frame(minHeight: 730)
+        .onAppear(perform: showTrialReminderIfDue)
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+            showTrialReminderIfDue()
+        }
+        .sheet(isPresented: Binding(
+            get: { trialReminderDays != nil },
+            set: { if !$0 { trialReminderDays = nil } }
+        )) {
+            TrialReminderView(
+                daysRemaining: trialReminderDays ?? TrialReminderRules.maxDaysRemaining,
+                onBuy: {
+                    licenseViewModel.openPurchaseLink(source: .trialReminder)
+                    trialReminderDays = nil
+                },
+                onLater: { trialReminderDays = nil }
+            )
+        }
         .onReceive(NotificationCenter.default.publisher(for: .navigateToDestination)) { notification in
             if let destination = notification.userInfo?["destination"] as? String {
                 switch destination {
@@ -165,6 +183,13 @@ struct ContentView: View {
                 }
             }
         }
+    }
+
+    /// Never during a recording, so dictation is not interrupted.
+    private func showTrialReminderIfDue() {
+        guard trialReminderDays == nil, whisperState.recordingState == .idle,
+              licenseViewModel.takeTrialReminderIfDue() else { return }
+        trialReminderDays = licenseViewModel.trialDaysRemaining
     }
 
     @ViewBuilder
